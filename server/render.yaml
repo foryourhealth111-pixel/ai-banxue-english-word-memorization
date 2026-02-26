@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: word-coach-server
+    runtime: docker
+    plan: starter
+    healthCheckPath: /health
+    envVars:
+      - key: GEMINI_BASE_URL
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-3-pro-preview
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: CLIENT_TOKEN
+        sync: false
+      - key: RATE_LIMIT_PER_MINUTE
+        value: "30"

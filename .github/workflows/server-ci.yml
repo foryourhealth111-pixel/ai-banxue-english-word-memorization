@@ -1,0 +1,35 @@
+name: server-ci
+
+on:
+  push:
+    paths:
+      - "server/**"
+      - ".github/workflows/server-ci.yml"
+  pull_request:
+    paths:
+      - "server/**"
+      - ".github/workflows/server-ci.yml"
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: server
+    steps:
+      - uses: actions/checkout@v4
+      - name: Secret pattern scan
+        run: |
+          if grep -R --line-number -E "sk-[A-Za-z0-9]{20,}" .; then
+            echo "Potential secret detected"
+            exit 1
+          fi
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: server/package-lock.json
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run test
+      - run: npm run build

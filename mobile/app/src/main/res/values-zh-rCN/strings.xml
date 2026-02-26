@@ -1,0 +1,49 @@
+<resources>
+  <string name="app_name">Word Coach</string>
+  <string name="overlay_notification_title">Word Coach 运行中</string>
+  <string name="overlay_notification_text">点击返回应用配置悬浮辅助</string>
+  <string name="copy_success">已复制讲解内容</string>
+
+  <string name="permission_header_title">Word Coach</string>
+  <string name="permission_header_subtitle">让截图背词更轻松：授权一次，悬浮球随时讲解。</string>
+  <string name="permission_section_title">权限步骤</string>
+  <string name="permission_step_overlay_title">请先授予悬浮窗权限</string>
+  <string name="permission_step_overlay_action">去开启悬浮窗权限</string>
+  <string name="permission_step_projection_title">请授予截图权限（MediaProjection）</string>
+  <string name="permission_step_projection_action">请求截图权限</string>
+  <string name="permission_step_notification_title">请授予通知权限（用于前台服务提示）</string>
+  <string name="permission_step_notification_action">请求通知权限</string>
+  <string name="permission_step_ready_title">权限已完成，可以启动悬浮助手</string>
+  <string name="permission_step_ready_action">启动悬浮助手</string>
+
+  <string name="settings_section_title">模型与提示词配置（可选）</string>
+  <string name="settings_section_desc">填写完整（Base URL + 模型 + API Key）后，手机会优先直连提供商（可脱离本机 server 独立运行）。直连失败时自动回退 server 代理。</string>
+  <string name="settings_base_url_label">API 接入商 Base URL（OpenAI 兼容）</string>
+  <string name="settings_model_label">模型名称</string>
+  <string name="settings_api_key_label">API Key</string>
+  <string name="settings_prompt_label">系统提示词（可自定义）</string>
+  <string name="settings_save_action">保存配置</string>
+  <string name="settings_reset_prompt_action">恢复默认提示词</string>
+
+  <string name="overlay_idle_hint">点击悬浮球开始讲解</string>
+  <string name="overlay_loading_preparing">正在准备...</string>
+  <string name="overlay_loading_capture">正在截图，请保持屏幕不动...</string>
+  <string name="overlay_loading_ocr">正在识别单词...</string>
+  <string name="overlay_loading_request">正在请求 AI 讲解...</string>
+  <string name="overlay_loading_cache_hit">命中本地缓存，正在整理讲解...</string>
+  <string name="overlay_action_copy">复制</string>
+  <string name="overlay_action_close">关闭</string>
+  <string name="overlay_action_exit">退出助手</string>
+  <string name="overlay_copy_done_button">已复制 ✓</string>
+  <string name="overlay_cache_tag">（缓存）</string>
+  <string name="overlay_markdown_result_template">## 单词: %1$s%2$s\n\n%3$s</string>
+  <string name="overlay_plain_result_template">单词: %1$s%2$s\n\n%3$s</string>
+  <string name="overlay_word_prefix">单词: %1$s</string>
+  <string name="overlay_candidate_ambiguous_format">候选词不唯一：%1$s\n请点下方候选词继续。</string>
+  <string name="overlay_ambiguous_continue">仍有歧义，请继续选择。</string>
+  <string name="overlay_error_capture_format">失败(CAPTURE_FAILED): %1$s</string>
+  <string name="overlay_error_generic_format">失败(%1$s): %2$s</string>
+  <string name="overlay_error_unexpected_format">失败(UNEXPECTED): %1$s</string>
+  <string name="overlay_candidate_placeholder">-</string>
+  <string name="clipboard_label">word-coach</string>
+</resources>

@@ -1,0 +1,49 @@
+<resources>
+  <string name="app_name">Word Coach</string>
+  <string name="overlay_notification_title">Word Coach is running</string>
+  <string name="overlay_notification_text">Tap to return and configure the floating assistant</string>
+  <string name="copy_success">Explanation copied</string>
+
+  <string name="permission_header_title">Word Coach</string>
+  <string name="permission_header_subtitle">Make screenshot vocabulary practice easier: authorize once, explain anytime.</string>
+  <string name="permission_section_title">Permission steps</string>
+  <string name="permission_step_overlay_title">Please grant floating window permission first.</string>
+  <string name="permission_step_overlay_action">Enable floating window permission</string>
+  <string name="permission_step_projection_title">Please grant screenshot permission (MediaProjection).</string>
+  <string name="permission_step_projection_action">Request screenshot permission</string>
+  <string name="permission_step_notification_title">Please grant notification permission (for foreground service).</string>
+  <string name="permission_step_notification_action">Request notification permission</string>
+  <string name="permission_step_ready_title">All permissions are ready. You can start the floating assistant.</string>
+  <string name="permission_step_ready_action">Start floating assistant</string>
+
+  <string name="settings_section_title">Model and prompt settings (optional)</string>
+  <string name="settings_section_desc">If Base URL + model + API key are complete, the phone will call the provider directly (standalone without local server). If direct call fails, it falls back to server proxy automatically.</string>
+  <string name="settings_base_url_label">Provider Base URL (OpenAI-compatible)</string>
+  <string name="settings_model_label">Model name</string>
+  <string name="settings_api_key_label">API key</string>
+  <string name="settings_prompt_label">System prompt (customizable)</string>
+  <string name="settings_save_action">Save settings</string>
+  <string name="settings_reset_prompt_action">Restore default prompt</string>
+
+  <string name="overlay_idle_hint">Tap the bubble to start explanation</string>
+  <string name="overlay_loading_preparing">Preparing…</string>
+  <string name="overlay_loading_capture">Capturing screen, please keep still…</string>
+  <string name="overlay_loading_ocr">Recognizing word…</string>
+  <string name="overlay_loading_request">Requesting AI explanation…</string>
+  <string name="overlay_loading_cache_hit">Local cache hit, formatting explanation…</string>
+  <string name="overlay_action_copy">Copy</string>
+  <string name="overlay_action_close">Close</string>
+  <string name="overlay_action_exit">Exit assistant</string>
+  <string name="overlay_copy_done_button">Copied ✓</string>
+  <string name="overlay_cache_tag"> (cached)</string>
+  <string name="overlay_markdown_result_template">## Word: %1$s%2$s\n\n%3$s</string>
+  <string name="overlay_plain_result_template">Word: %1$s%2$s\n\n%3$s</string>
+  <string name="overlay_word_prefix">Word: %1$s</string>
+  <string name="overlay_candidate_ambiguous_format">Candidates are ambiguous: %1$s\nPlease tap one candidate below to continue.</string>
+  <string name="overlay_ambiguous_continue">Still ambiguous, please continue selecting.</string>
+  <string name="overlay_error_capture_format">Failed (CAPTURE_FAILED): %1$s</string>
+  <string name="overlay_error_generic_format">Failed (%1$s): %2$s</string>
+  <string name="overlay_error_unexpected_format">Failed (UNEXPECTED): %1$s</string>
+  <string name="overlay_candidate_placeholder">-</string>
+  <string name="clipboard_label">word-coach</string>
+</resources>
